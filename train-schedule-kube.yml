@@ -10,13 +10,15 @@ spec:
   - protocol: TCP
     port: 8080
     nodePort: 8080
-    
+
 ---
-  
+
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: train-schedule-deployment
+  labels:
+    app: train-schedule
 spec:
   replicas: 2
   selector:
