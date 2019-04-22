@@ -45,7 +45,7 @@ pipeline {
                 //implement Kubernetes deployment here
                 kubernetesDeploy(
                     kubeconfigId: 'kubeconfigid',
-                    configs: '<ant-glob-pattern-for-resource-config-paths>',
+                    configs: 'train-schedule-kube.yml',
                     enableConfigSubstitution: true
                )
             }
