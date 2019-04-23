@@ -17,10 +17,8 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: train-schedule-deployment
-  labels:
-    app: train-schedule
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: train-schedule
